@@ -28,6 +28,11 @@ footer {
 }
 
 a {
-  color: null;
+  color: $primary-color;
   text-decoration: none;
+  &:hover {
+    & h1 {
+      background-color: $secondary-color;
+    }
+  }
 }
