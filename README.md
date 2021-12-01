@@ -5,3 +5,4 @@
 - ReactJS / Gatsby
 - SASS
 - Google Analytics 4
+- Continuous Integration via Git + Netlify
