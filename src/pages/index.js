@@ -6,7 +6,7 @@ import Helmet from "react-helmet"
 import Seo from "../components/seo"
 
 import resume from '../downloads/Brett_Bartylla_Resume.pdf' 
-
+import track from '../media/Believe.mp3' 
 
 //data pulls in query "data" from below
 const IndexPage = ({data}) => (
@@ -51,6 +51,10 @@ const IndexPage = ({data}) => (
           </li>
         </ul>
       </div>
+      <audio controls autoplay ID="player">
+        <source src={track} type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
   </Layout>
 )
