@@ -4,20 +4,8 @@ body {
   font-size: $font-size-body;
 }
 //headers
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $primary-font;
-}
-
 h1 {
-}
-h2 {
-}
-h3 {
+  font-family: $primary-font;
 }
 
 p,
