@@ -1,7 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 
 import Layout from "../components/layout"
+import Helmet from "react-helmet"
 import Seo from "../components/seo"
 
 import resume from '../downloads/Brett_Bartylla_Resume.pdf' 
@@ -10,6 +11,9 @@ import resume from '../downloads/Brett_Bartylla_Resume.pdf'
 //data pulls in query "data" from below
 const IndexPage = ({data}) => (
   <Layout>
+    <Helmet>
+        <script src={withPrefix('script.js')} type="text/javascript" />
+    </Helmet>
     <Seo title="Home" />
 
     <div className="Grid--landing">
