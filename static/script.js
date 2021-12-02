@@ -2,44 +2,14 @@
 var audio = document.getElementById("player");
 audio.play();
 
-//detune after a while
-// function randRange(data) {
-//   var newTime = data[Math.floor(data.length * Math.random())];
-//   return newTime;
-// }
-
-// function toggleSomething() {
-//   var timeArray = new Array(200, 3000, 2000, 2500, 4000, 3000, 5000, 6000);
-//   // creates random playback speeds
-//   audio.playbackRate = Math.floor(Math.random() * (9 + 9)) / 10;
-//   console.log(timer);
-//   console.log(audio.playbackRate);
-//   clearInterval(timer);
-//   timer = setInterval(toggleSomething, randRange(timeArray));
-// }
-// var timer = setInterval(toggleSomething, 35000);
-
-
-function colorChange() { 
-  var i = 0;
-  function change() {
-    var doc = document.getElementById("background");
-    var color = ["red", "blue", "black", "green"];
-    document.body.style.backgroundColor = color[i];
-    i = (i + 1) % color.length;
-  }
-  setInterval(change, 451); //synced to bpm (60,000 / 133bpm)
-}
-
 function startTimer() {
   var myVar = setInterval(function() {
     time = audio.currentTime;
     //wait for ittttt
-    if (time >= 13.4) {
-      //stop current timer
-      clearInterval(myVar);
-      //call color looping
-      colorChange()
+    if (time >= 13.8) {
+
+      document.body.classList.add("bg-colors");
+
     }
   }, 600); 
 }

@@ -1,0 +1,25 @@
+.bg-colors {
+	animation-name: backgroundColorPalette;
+	animation-duration: 1.793s;
+    animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start; 
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #b06977;
+	}
+	25% {
+		background: #deb041;;
+	}
+	50% {
+		background: #086466;
+	}
+	75% {
+		background: #6b2c57;
+	}
+	100% {
+		background: #95141c;
+	}
+}
