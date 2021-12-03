@@ -1,8 +1,7 @@
 @import "./variables.scss";
 
-html {
-}
 body {
+  overflow: hidden; 
 }
 
 main {
@@ -18,5 +17,5 @@ li {
 }
 
 #player {
-  display: none;;
+  display: none;
 }
